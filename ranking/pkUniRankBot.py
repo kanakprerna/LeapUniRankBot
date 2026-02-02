@@ -23,7 +23,7 @@ SOFTWARE.
 
 """
 """
-pkUniRankBot - Telegram Bot for University Ranking with Excel Processing
+LeapUniRankBot - Telegram Bot for University Ranking with Excel Processing
 Enhanced with real data fetching and comprehensive rate limiting
 """
 
@@ -492,7 +492,7 @@ class RateLimitedDataFetcher:
         self.rate_limiter = RateLimiter()
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'pkUniRankBot/1.0 (https://github.com/yourusername/pkUniRankBot)'
+            'User-Agent': 'LeapUniRankBot/1.0 (https://github.com/yourusername/LeapUniRankBot)'
         })
         logger.info("RateLimitedDataFetcher initialized")
     
@@ -2434,7 +2434,7 @@ class EnhancedUniRankBot:
     
     def start(self):
         """Start the bot"""
-        print("🤖 pkUniRankBot is starting...")
+        print("🤖 LeapUniRankBot is starting...")
         print("📊 University Ranking System Ready")
         print("📈 Excel Processing Enabled")
         print("⚙️ User configuration system enabled")
@@ -2455,7 +2455,7 @@ class EnhancedUniRankBot:
         user_config = self.get_user_config(str(user.id))
         
         welcome_text = f"""
-🎓 Welcome to <b>pkUniRankBot</b> {user.first_name}!
+🎓 Welcome to <b>LeapUniRankBot</b> {user.first_name}!
 
 I analyze universities worldwide using a comprehensive multi-parameter ranking system.
 
@@ -2607,7 +2607,7 @@ Use the buttons below to toggle each data source:
         """Handle /help command"""
         logger.info(f"Help command from user: {update.effective_user.id}")
         help_text = """
-<b>📚 pkUniRankBot Help</b>
+<b>📚 LeapUniRankBot Help</b>
 
 <b>Ranking Methodology:</b>
 This bot uses a multi-parameter scoring system:
@@ -3847,7 +3847,7 @@ Web presence, brand recognition.
         """Show main menu"""
         logger.debug("Showing main menu")
         welcome_text = """
-🎓 Welcome to <b>pkUniRankBot</b>!
+🎓 Welcome to <b>LeapUniRankBot</b>!
 
 I analyze universities worldwide using a comprehensive multi-parameter ranking system.
 
@@ -4033,7 +4033,7 @@ def main():
     
     # Create and run bot
     try:
-        print("🤖 Starting Enhanced pkUniRankBot with User Configuration...")
+        print("🤖 Starting Enhanced LeapUniRankBot with User Configuration...")
         print(f"📊 Version: python-telegram-bot v{telegram.__version__}")
         print(f"📈 pandas v{pandas.__version__}")
         print("📝 Detailed logging enabled")
