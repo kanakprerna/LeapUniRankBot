@@ -62,7 +62,7 @@ jobs:
         trap cleanup SIGINT SIGTERM
                 
         # Run the bot
-        python /home/runner/work/PKUniRankBot/PKUniRankBot/ranking/pkUniRankBot.py &
+        python /home/runner/work/LeapUniRankBot/LeapUniRankBot/ranking/pkUniRankBot.py &
                 
         # Keep the script running
         wait
