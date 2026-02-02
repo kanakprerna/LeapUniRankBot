@@ -1,4 +1,4 @@
-# 🎓 pkUniRankBot - Comprehensive University Ranking System
+# 🎓 LeapUniRankBot - Comprehensive University Ranking System
 
 ![Bot Preview](https://img.shields.io/badge/Telegram-Bot-blue)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-green)
